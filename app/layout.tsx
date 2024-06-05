@@ -3,9 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
 import Navbar from "./components/navbar";
+import Home from "./page";
+import { IconHome, IconMessage, IconUser, IconBrandBlogger, } from "@tabler/icons-react";
+import { FloatingNav } from "@/app/components/ui/floating-navbar";
 
 const inter = Inter({ subsets: ["latin"] });
-
 
 
 export default function RootLayout({
@@ -16,16 +18,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <ThemeProvider
+      <ThemeProvider 
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
+            
             <Navbar />
-        <main className="max-w-6xl mx-auto px-4 py-5">{children}</main>
        </ThemeProvider>
-
+        <main className="max-w-6xl mx-auto px-4 py-5 " >{children}</main>
         </body>
     </html>
   );

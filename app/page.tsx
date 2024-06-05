@@ -1,58 +1,47 @@
-import { Card, CardContent } from "@/components/ui/card";
-import Navbar from "./components/navbar";
-import { simpleBlogCard } from "./lib/interface";
-import { client, urlFor } from "./lib/sanity";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { FlipWords } from "./components/ui/flip-words";
+import Blogs from "./blogs/page";
+import { IconHome, IconMessage, IconUser, IconBrandBlogger, } from "@tabler/icons-react";
+import { FloatingNav } from "@/app/components/ui/floating-navbar";
+import { Section, Container } from "@/components/craft";
+import Balancer from 'react-wrap-balancer'
+import {Button} from "@/components/ui/button";
+import {Camera, User} from "lucide-react";
 
 
-export const revalidate =30; //revalidate at most 30 secoonds
+export default function Home() {
+  const words = ["CS-22A","BLOGS"];
+  
 
-async function getData() {
-  const query = `
-  *[_type=='blog'] | order(_createdAt desc) {
-    title,
-      smallDescription,
-      "currentSlug": slug.current,
-      titleImage
-  }`;
-
-  const data = await client.fetch(query)
-
-  return data;
-}
-
-
-
-export default async function Home() {
-  const data: simpleBlogCard[] = await getData();
-
-console.log(data);
-
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-24 gap-5"> 
-      {data.map((post, idx) => (
-        <Card key={idx}>
-          <Image 
-          src={urlFor(post.titleImage).url()} 
-          alt="image" 
-          width={700} 
-          height={400}
-          className="rounded-t-lg h-[200px] object-cover " 
-          />
-
-          <CardContent className="mt-5">
-          <h3 className="text-lg font-bold line-clamp-2">{post.title}</h3>
-          <p className="line-clamp-3 text-small mt-2 text-gray-600 dark:text-gray-400">
-            {post.smallDescription}
-            </p>
-            <Button asChild className="w-full mt-7">
-             <Link href={`/blog/${post.currentSlug}`} className="text-slate-200">Read More</Link>
-            </Button>
-          </CardContent>
-        </Card>
-      ))}
+  return(
+    <div className="text-center">
+      <FlipWords words={words} className="mt-28 text-big max-w-7xl font-bold " />
+<Section>
+      <Container className="text-center items-center flex flex-col">
+        <h1 className="!mb-0">
+          <Balancer>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </Balancer>
+        </h1>
+        <h3 className="text-muted-foreground">
+          <Balancer>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </Balancer>
+        </h3>
+        <div className="mt-6 md:mt-12 not-prose flex gap-2">
+          <Button asChild>
+            <Link href="/studentsinfo">
+              <User className="mr-2" />
+              Students
+            </Link>
+          </Button>
+          <Button variant={"ghost"} asChild>
+            <Link href="/blogs">Blogs -{">"}</Link>
+          </Button>
+        </div>
+      </Container>
+    </Section>
     </div>
-  );
+  )
 }

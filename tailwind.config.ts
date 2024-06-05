@@ -10,6 +10,11 @@ const config = {
 	],
   prefix: "",
   theme: {
+    fontSize: {
+      'big': '15rem',
+      'small': '2rem',
+      'xsmall': '1.5rem'
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -74,7 +79,8 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [
+    require("tailwindcss-animate"), require("@tailwindcss/typography")], 
 } satisfies Config
 
 export default config
