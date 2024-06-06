@@ -13,6 +13,7 @@ const config = {
     fontSize: {
       'big': '15rem',
       'small': '2rem',
+      'medium': '3rem',
       'xsmall': '1.5rem'
     },
     container: {

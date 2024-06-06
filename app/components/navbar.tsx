@@ -46,7 +46,7 @@ export default function Navbar() {
             <Link href={"/"} className="font-extrabold text-3xl flex items-center sticky"> <Image src={Logo} alt="logo of the webpage" width={40} height={30} className="pr-1"></Image>
                 CS-22A </Link>
             <Link href={"/blogs"} className="pl-6 text-2xl pt-1.5 ">Blogs</Link>
-            <Link href={"/studentsinfo"} className="pl-6 text-2xl pt-1.5 ">Students</Link>
+            <Link href={"/studentsinfo"} className="pl-6 text-2xl pt-1.5 ">Class</Link>
             <Link href={"/aboutme"} className="pl-6 text-2xl pt-1.5 ">Info</Link>
             </div>
             <div className="flex"> 

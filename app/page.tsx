@@ -33,7 +33,7 @@ export default function Home() {
           <Button asChild>
             <Link href="/studentsinfo">
               <User className="mr-2" />
-              Students
+              Class
             </Link>
           </Button>
           <Button variant={"ghost"} asChild>
