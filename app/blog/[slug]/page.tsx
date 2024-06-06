@@ -1,5 +1,7 @@
+import { FloatingNav } from "@/app/components/ui/floating-navbar";
 import { fullBlog } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity"
+import { IconBrandBlogger, IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 
@@ -24,7 +26,35 @@ export default async function BlogArticle ({params}: {params: {slug: string}}) {
 
     console.log(data);
 
-
+    const navItems = [
+        {
+          name: "Home",
+          link: "/",
+          icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        },
+        {
+          name: "Blogs",
+          link: "/blog",
+          icon: <IconBrandBlogger className="h-4 w-4 text-neutral-500 dark:text-white" />,
+        },
+        {
+            name: "Students",
+            link: "/studentsinfo",
+            icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+          },
+          {
+            name: "Info",
+            link: "/aboutme",
+            icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+          },
+        {
+          name: "Newsletter",
+          link: "/newsletter",
+          icon: (
+            <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+          ),
+        },
+      ];
 
     return (
         <div className="mt-10  max-w-full scroll-smooth ">
@@ -38,6 +68,7 @@ export default async function BlogArticle ({params}: {params: {slug: string}}) {
             <div className="mt-16  prose-a:no-underline prose prose-blue prose-xl dark:prose-invert  prose-a:text-primary prose-p:text-justify max-w-7xl "> 
                 <PortableText  value={data.content} />
             </div>
+            <FloatingNav navItems={navItems} />
         </div>
     );
 }
