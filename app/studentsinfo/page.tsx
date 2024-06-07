@@ -1,9 +1,68 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "@/app/components/ui/layout-grid";
-import Img1 from "@/public/LOGO.svg"
-import Agsaoay from "@/public/Agsaoay.jpg"
  
+
+
+const items = [
+  {
+      src: '/public/'
+    },
+    {
+      src: '/public/',
+    },
+    {
+      src: '/public/Torlao.png',
+    },
+    {
+      src: '/public/Dave.svg',
+    },
+    {
+      src: '/public/Rogin',
+    },
+    {
+      src: '/public/Matt',
+    },
+    {
+      src: '/public/Aaron',
+    },
+    {
+      src: '/public/Gudalle',
+    },
+    {
+      src: '/public/Juben',
+    },
+    {
+      src: '/public/Tudas',
+    },
+    {
+      src: '/public/Ababa',
+    },
+    {
+      src: '/public/Perez',
+    },
+    {
+      src: '/public/Salavedra',
+    },
+    {
+      src: '/public/Ortega',
+    },
+    {
+      src: '/public/Balderas',
+    },
+    {
+      src: '/public/Rico',
+    },
+    {
+      src: '/public/Nico',
+    },
+    {
+      src: '/public/Reggie',
+    },
+];
+
+
+
 export default function LayoutGridDemo() {
   return (
     <div className="h-screen py-20 w-full">
