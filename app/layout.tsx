@@ -27,7 +27,7 @@ export default function RootLayout({
             
             <Navbar />
        </ThemeProvider>
-        <main className="max-w-6xl mx-auto " >{children}</main>
+        <main className="max-w-full mx-auto" >{children}</main>
         </body>
     </html>
   );

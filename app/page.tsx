@@ -6,7 +6,7 @@ import { FloatingNav } from "@/app/components/ui/floating-navbar";
 import { Section, Container } from "@/components/craft";
 import Balancer from 'react-wrap-balancer'
 import {Button} from "@/components/ui/button";
-import {Camera, User} from "lucide-react";
+import {Camera, Mail} from "lucide-react";
 import { TypewriterEffectSmooth } from "@/app/components/ui/typewriter-effect";
 import { TypewriterEffect, TypewriterEffectSmooth2 } from "./components/ui/typewriter-effect2";
 
@@ -35,27 +35,26 @@ export default function Home() {
   return(
     <div className="text-center">
       <div className="mt-7">
-       <TypewriterEffectSmooth words={words} className="text-xmedium justify-center pb-0 mb-0"/>
-       <TypewriterEffectSmooth2 words={words2} className="text-xmedium pt-0 mt-0"/>
+       <TypewriterEffectSmooth words={words} className=" justify-center pb-0 mb-0 pt-16"/>
+       <TypewriterEffectSmooth2 words={words2} className="pt-0 mt-0 flex justify-center"/>
       </div>
 <Section >
       <Container className="text-center items-center flex flex-col mt-16">
         <h1 className="!mb-0">
           <Balancer>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Discover the journey of our school section, where every student’s story matters.
           </Balancer>
         </h1>
         <h3 className="text-muted-foreground">
           <Balancer>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+          Dive into the vibrant life of our section, one blog post at a time.
           </Balancer>
         </h3>
         <div className="mt-6 md:mt-12 not-prose flex gap-2">
           <Button asChild>
-            <Link href="/studentsinfo">
-              <User className="mr-2" />
-              Class
+            <Link href="/">
+              <Mail className="mr-2" />
+              Newsletter
             </Link>
           </Button>
           <Button variant={"ghost"} asChild>

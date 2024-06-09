@@ -57,15 +57,15 @@ export default async function BlogArticle ({params}: {params: {slug: string}}) {
       ];
 
     return (
-        <div className="mt-10  max-w-full scroll-smooth ">
-            <h1>
-                <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase mt-40 "> CS22A -Blog</span>
-                <span className="mt-2 block font-bold text-center leading-8 m tracking-tight sm:text-4xl max-w-6xl text-small">{data.title}</span>
+        <div className="mt-10  max-w-full scroll-smooth items-center justify-items-center object-center lg:mx-72 md:mx-40 sm:mx-20">
+            <h1 className="object-center">
+                <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase "> CS22A -Blog</span>
+                <span className=" mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl ">{data.title}</span>
             </h1>
-
-            <Image src={urlFor(data.titleImage).url()} width={1120} height={100} alt="Title Image" priority className="rounded-lg mt-8  max-w-8xl" />
-
-            <div className="mt-16  prose-a:no-underline prose prose-blue prose-xl dark:prose-invert  prose-a:text-primary prose-p:text-justify max-w-7xl "> 
+            <div className="object-center">
+            <Image src={urlFor(data.titleImage).url()} width={1300 } height={100} alt="Title Image" priority className="rounded-lg mt-8 max-w-full lg:max-w-full " />
+            </div>
+            <div className="mt-16  prose-a:no-underline prose prose-blue prose-xl dark:prose-invert  prose-a:text-primary prose-p:text-justify max-w-full text-xl "> 
                 <PortableText  value={data.content} />
             </div>
             <FloatingNav navItems={navItems} />
