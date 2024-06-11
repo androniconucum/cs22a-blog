@@ -1,9 +1,11 @@
+"use client"
+
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 import Image from "next/image";
 import Logo from "@/public/LOGO.svg"
 import { IconHome, IconMessage, IconUser, IconBrandBlogger, } from "@tabler/icons-react";
-import { FloatingNav } from "./ui/floating-navbar";
+import {motion} from "framer-motion"
 
 
 
@@ -35,9 +37,16 @@ export default function Navbar() {
         },
       ];
     return(
-        <div className=" fixed bg-transparent w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 dark:bg-opacity-85 bg-white dark:bg-[#09090b] pt-1">
+        <motion.div className=" fixed bg-transparent w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 dark:bg-opacity-85 bg-white dark:bg-[#09090b] pt-1"
+        initial={{ opacity: 0, y: -180 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          ease: "easeInOut",
+          duration: 1,
+          delay: 0.6,
+        }}>
         <nav className=" w-full flex items-center justify-between max-w-full mx-auto  pb-1 pr-40 pl-40">
-            <div className="flex">
+            <div className="flex" >
             <Link href={"/"} className="font-extrabold text-xl flex items-center pr-10"> <Image src={Logo} alt="logo of the webpage" width={40} height={30} className="pr-1"></Image>
                 CS-22A </Link>
             <Link href={"/blogs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Blogs</Link>
@@ -51,6 +60,6 @@ export default function Navbar() {
           </div>
         </nav>
         <hr className="full"/>
-        </div>
+        </motion.div>
     );
 }

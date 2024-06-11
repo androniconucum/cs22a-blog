@@ -10,15 +10,53 @@ import { LayoutGrid } from "./components/ui/layout-grid";
 import Image from "next/image";
 import Logo from "@/public/Hero.svg"
 import { FlipWords } from "./components/ui/flip-words";
+import {animate, motion, useInView, useMotionValueEvent, useScroll, useTransform} from "framer-motion";
+
+
+// Variables
+
+const banner = {
+  animate: {
+    transition: {
+      delayChildren: 0.4,
+      staggerChildren: 0.1,
+    }
+  }
+};
+
+const letterAnimation = {
+  initial: {
+    y:400
+  },
+  animate: {
+    y:0,
+    transition: {
+      ease: [0.6, 0.1, -0.05, 0.95],
+      duration:1,
+    }
+  }
+}
+
+
+
+
+
 
 
 export default function Home() {
-  const words = ["Innovators", "Programmers", "Creators", "Engineers", "Visionaries"];
+  const words = ["Innovators", "Developers", "Creators", "Engineers", "Visionaries"];
       
       
       return(
         <div className="max-w-full pt-28">
-        <div className="max-w-full mt-10 flex justify-between mx-40">
+        <motion.div className="max-w-full mt-20 flex justify-between mx-40"
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 0.4,
+          }}>
        <Section>
       <div className="mt-7 max-w-full text-6xl pb-0 mb-0 font-semibold lg:text-7xl">
         Welcome to the CS22A Blog
@@ -33,7 +71,7 @@ export default function Home() {
           Discover the journey of our school section, where every student’s story matters.
           </Balancer>
         </h1>
-        <h3 className="text-muted-foreground flex">
+        <h3 className="text-muted-foreground flex" >
           <Balancer>
           Dive into the vibrant life of our section, one blog post at a time.
           </Balancer>
@@ -58,7 +96,7 @@ export default function Home() {
       url="https://www.facebook.com/ACLCCollegeStaMaria"
       >
           <Button>
-            <IconBrandFacebook className="mr-2 text-blue-700"/> Aclc Santa Maria
+            <IconBrandFacebookFilled className="mr-2 text-blue-700"/> Aclc Santa Maria
           </Button>
           </LinkPreview> {" "}
 
@@ -78,15 +116,22 @@ export default function Home() {
       </Container>
     </Section>
          <Image src={Logo} alt="Hero logo" width={500} height={500}/>
-       </div>
+       </motion.div>
 
 
     <div>
 
-        <div className="h-screen py-20 w-full content-zcenter mt-28">
-          <div className="text-center mt-20 font-bold text-5xl">
+        <div className="h-screen py-20 w-full content-zcenter mt-60">
+          <motion.div className="text-center mt-20 font-bold text-5xl" initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      variants={{
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0 }
+      }} >
             CS22A STUDENTS S.Y 2024
-          </div>
+          </motion.div>
         <LayoutGrid cards={cardname} />
        </div>
   </div>  
