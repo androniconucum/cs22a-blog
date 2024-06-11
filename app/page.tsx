@@ -18,7 +18,7 @@ export default function Home() {
       
       
       return(
-        <div className="max-w-full pt-20">
+        <div className="max-w-full pt-28">
         <div className="max-w-full mt-10 flex justify-between mx-40">
        <Section>
       <div className="mt-7 max-w-full text-6xl pb-0 mb-0 font-semibold lg:text-6xl">
