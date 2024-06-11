@@ -8,7 +8,11 @@ const nextConfig = {
               port: '',
             }
           ],
-    }
+
+        domains: [
+          "api.microlink.io",
+        ],
+    },
 };
     
 

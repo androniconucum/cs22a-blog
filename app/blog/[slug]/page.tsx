@@ -3,7 +3,7 @@ import { fullBlog } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity"
 import { IconBrandBlogger, IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { PortableText } from "next-sanity";
-import Image from "next/image";
+import Image from "next/image"
 
 
 export const revalidate =30; //revalidate at most 30 secoonds
@@ -26,49 +26,18 @@ export default async function BlogArticle ({params}: {params: {slug: string}}) {
 
     console.log(data);
 
-    const navItems = [
-        {
-          name: "Home",
-          link: "/",
-          icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-        },
-        {
-          name: "Blogs",
-          link: "/blog",
-          icon: <IconBrandBlogger className="h-4 w-4 text-neutral-500 dark:text-white" />,
-        },
-        {
-            name: "Students",
-            link: "/studentsinfo",
-            icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-          },
-          {
-            name: "Info",
-            link: "/aboutme",
-            icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-          },
-        {
-          name: "Newsletter",
-          link: "/newsletter",
-          icon: (
-            <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-          ),
-        },
-      ];
-
     return (
-        <div className="mt-10  max-w-full scroll-smooth items-center justify-items-center object-center lg:mx-72 md:mx-40 sm:mx-20">
+        <div className="pt-36  max-w-full scroll-smooth items-center justify-items-center object-center lg:mx-50  md:mx-40 sm:mx-20">
             <h1 className="object-center">
                 <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase "> CS22A -Blog</span>
                 <span className=" mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl ">{data.title}</span>
             </h1>
             <div className="object-center">
-            <Image src={urlFor(data.titleImage).url()} width={1300 } height={100} alt="Title Image" priority className="rounded-lg mt-8 max-w-full lg:max-w-full " />
+            <Image src={urlFor(data.titleImage).url()} width={1600 } height={100} alt="Title Image" priority className="rounded-lg mt-8 max-w-full lg:max-w-full " />
             </div>
-            <div className="mt-16  prose-a:no-underline prose prose-blue prose-xl dark:prose-invert  prose-a:text-primary prose-p:text-justify max-w-full text-xl "> 
+            <div className="mt-16 prose-a:no-underline prose prose-blue prose-xl dark:prose-invert  prose-a:text-primary prose-p:text-justify max-w-full text-xl "> 
                 <PortableText  value={data.content} />
             </div>
-            <FloatingNav navItems={navItems} />
         </div>
     );
 }

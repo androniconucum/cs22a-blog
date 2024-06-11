@@ -35,20 +35,22 @@ export default function Navbar() {
         },
       ];
     return(
-        <div className="relative bg-transparent w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 ">
-        <nav className=" w-full relative flex items-center justify-between max-w-7xl mx-auto px-4 py-5 pb-1 pt-1 ">
+        <div className=" fixed bg-transparent w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 dark:bg-opacity-85 bg-white dark:bg-[#09090b] pt-1">
+        <nav className=" w-full flex items-center justify-between max-w-full mx-auto  pb-1 pr-40 pl-40">
             <div className="flex">
-            <Link href={"/"} className="font-extrabold text-xl flex items-center sticky "> <Image src={Logo} alt="logo of the webpage" width={40} height={30} className="pr-1"></Image>
+            <Link href={"/"} className="font-extrabold text-xl flex items-center pr-10"> <Image src={Logo} alt="logo of the webpage" width={40} height={30} className="pr-1"></Image>
                 CS-22A </Link>
-            <Link href={"/blogs"} className="pl-6 text-l pt-2 text-foreground/60 hover:text-foreground/90">Blogs</Link>
-            <Link href={"/aboutme"} className="pl-6 text-l pt-2 text-foreground/60 hover:text-foreground/90">Info</Link>
+            <Link href={"/blogs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Blogs</Link>
+            <Link href={"/aboutme"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Info</Link>
             </div>
             <div className="flex"> 
-            <Link href={"/newsletter"} className="mr-3 text-l pt-2 text-foreground/60 hover:text-foreground/90 ">Newsletter</Link>
           <ModeToggle />
+          <button className="px-1 ml-5 text-sm my-0 py-0 rounded-md bg-white text-black font-bold transition duration-200 hover:bg-[#09090b] hover:text-white dark:bg-[#09090b] dark:text-[#E0E0E1] dark:hover:bg-white dark:hover:text-black">
+            Newsletter
+          </button>
           </div>
         </nav>
-        <hr className=" w-full"/>
+        <hr className="full"/>
         </div>
     );
 }

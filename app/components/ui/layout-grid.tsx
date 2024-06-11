@@ -26,7 +26,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid sm:grid-1 md:grid-cols-3 lg:grid-cols-3 max-w-7xl mx-auto gap-4 relative z-50 ">
+    <div className="w-full h-full p-10 grid sm:grid-1 md:grid-cols-8 lg:grid-cols-6 max-w-full max-h-full gap-5 relative z-100 lg:px-40 md:px-40 sm-px20">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -35,7 +35,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute inset-0 h-full w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-lg cursor-pointer absolute inset-0 h-4/6 w-full md:w-1/3 m-auto z-50 flex justify-center items-center flex-wrap flex-col "
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"
@@ -68,7 +68,7 @@ const BlurImage = ({ card }: { card: Card }) => {
       width="500"
       onLoad={() => setLoaded(true)}
       className={cn(
-        "object-scale-down object-center absolute inset-0 h-full w-full transition duration-200",
+        "object-cover object-center absolute inset-0 h-full w-full transition duration-200",
         loaded ? "blur-none" : "blur-md"
       )}
       alt="thumbnail"
