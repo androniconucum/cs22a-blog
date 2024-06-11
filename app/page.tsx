@@ -50,7 +50,7 @@ export default function Home() {
           </Button>
         </div>
         <div className="mt-10 mb-1 flex">
-          Follow ACLC Santa Maria --->
+          Follow ACLC Santa Maria ---
         </div>
         <div className="pt-2">
 
