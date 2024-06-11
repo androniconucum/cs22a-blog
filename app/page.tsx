@@ -1,13 +1,12 @@
 "use client"
 import Link from "next/link";
-import { IconHome, IconMessage, IconUser, IconBrandBlogger, IconBrandFacebook, IconBrandFacebookFilled, IconBrandInstagram } from "@tabler/icons-react";
+import { IconHome, IconMessage, IconUser, IconBrandBlogger, IconBrandFacebook, IconBrandFacebookFilled, IconBrandInstagram, IconBrandLinktree, IconBrandChrome, IconBrandGmail, IconBrandGoogle, IconLink, IconPhoneCall } from "@tabler/icons-react";
 import { Section, Container } from "@/components/craft";
 import Balancer from 'react-wrap-balancer'
 import {Button} from "@/components/ui/button";
 import {Camera, Mail} from "lucide-react";
 import { LinkPreview } from "./components/ui/link-preview";
 import { LayoutGrid } from "./components/ui/layout-grid";
-import { motion } from "framer-motion"
 import Image from "next/image";
 import Logo from "@/public/Hero.svg"
 import { FlipWords } from "./components/ui/flip-words";
@@ -21,10 +20,10 @@ export default function Home() {
         <div className="max-w-full pt-28">
         <div className="max-w-full mt-10 flex justify-between mx-40">
        <Section>
-      <div className="mt-7 max-w-full text-6xl pb-0 mb-0 font-semibold lg:text-6xl">
+      <div className="mt-7 max-w-full text-6xl pb-0 mb-0 font-semibold lg:text-7xl">
         Welcome to the CS22A Blog
         </div>
-        <div className="text-6xl font-semibold lg:text-4xl mt-3">
+        <div className="text-6xl font-semibold lg:text-3xl mt-3">
         Meet the Future
        <FlipWords words={words} className="font-extrabold text-blue-700 text-5xl dark:text-blue-700"/>
        </div>
@@ -39,16 +38,42 @@ export default function Home() {
           Dive into the vibrant life of our section, one blog post at a time.
           </Balancer>
         </h3>
-        <div className="mt-4 not-prose flex gap-5 pt-3">
+        <div className="mt-4 not-prose flex gap-5">
           <Button asChild>
             <Link href="/newsletter">
               <Mail className="mr-2" />
               Newsletter
             </Link>
           </Button>
-          <Button variant={"ghost"} asChild>
+          <Button variant={"outline"} asChild>
             <Link href="/blogs">Blogs -{">"}</Link>
           </Button>
+        </div>
+        <div className="mt-10 mb-1 flex">
+          Follow ACLC Santa Maria --->
+        </div>
+        <div className="pt-2">
+
+          <LinkPreview 
+      url="https://www.facebook.com/ACLCCollegeStaMaria"
+      >
+          <Button>
+            <IconBrandFacebook className="mr-2 text-blue-700"/> Aclc Santa Maria
+          </Button>
+          </LinkPreview> {" "}
+
+
+          <Button className="ml-4">
+            <IconPhoneCall className="mr-2"/> +639 171 366 167
+          </Button>
+
+          <LinkPreview 
+      url="https://aclcsm.com/index.html#"
+      >
+          <Button className="ml-4">
+            <IconLink className="mr-2"/> Aclc Santa Maria
+          </Button>
+          </LinkPreview> {" "}
         </div>
       </Container>
     </Section>
