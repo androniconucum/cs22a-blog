@@ -10,6 +10,7 @@ import { LayoutGrid } from "@/app/components/ui/layout-grid";
 import { url } from "inspector";
 import { LinkPreview } from "../components/ui/link-preview";
 import { IconMessage } from "@tabler/icons-react";
+import { motion} from "framer-motion";
 
 
 

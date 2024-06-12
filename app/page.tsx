@@ -4,13 +4,17 @@ import { IconHome, IconMessage, IconUser, IconBrandBlogger, IconBrandFacebook, I
 import { Section, Container } from "@/components/craft";
 import Balancer from 'react-wrap-balancer'
 import {Button} from "@/components/ui/button";
-import {Camera, Mail} from "lucide-react";
+import {Badge, Camera, Mail} from "lucide-react";
 import { LinkPreview } from "./components/ui/link-preview";
 import { LayoutGrid } from "./components/ui/layout-grid";
 import Image from "next/image";
 import Logo from "@/public/Hero.svg"
 import { FlipWords } from "./components/ui/flip-words";
 import {animate, motion, useInView, useMotionValueEvent, useScroll, useTransform} from "framer-motion";
+import { MacbookScroll } from "./components/ui/macbook-scroll";
+import { MacbookScroll2 } from "./components/ui/macbook-scroll2";
+import { MacbookScroll3 } from "./components/ui/macbook-scroll3";
+
 
 
 // Variables
@@ -48,8 +52,8 @@ export default function Home() {
       
       
       return(
-        <div className="max-w-full pt-28">
-        <motion.div className="max-w-full mt-20 flex justify-between mx-40"
+        <div className="max-w-full pt-28 mr-20">
+        <motion.div className="max-w-full mt-20 flex justify-between mx-40 mb-60"
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -66,12 +70,12 @@ export default function Home() {
        <FlipWords words={words} className="font-extrabold text-blue-700 text-5xl dark:text-blue-700"/>
        </div>
       <Container className=" flex flex-col md:ml-0 mt-5">
-        <h1 className="!mb-0 flex">
+        <h1 className="!mb-0 flex text-sm">
           <Balancer>
           Discover the journey of our school section, where every student’s story matters.
           </Balancer>
         </h1>
-        <h3 className="text-muted-foreground flex" >
+        <h3 className="text-muted-foreground flex text-sm" >
           <Balancer>
           Dive into the vibrant life of our section, one blog post at a time.
           </Balancer>
@@ -87,10 +91,10 @@ export default function Home() {
             <Link href="/blogs">Blogs -{">"}</Link>
           </Button>
         </div>
-        <div className="mt-10 mb-1 flex">
-          Follow ACLC Santa Maria ---
+        <div className="mt-10 mb-1 flex text-blue-700 text-lg font-bold">
+          Follow ACLC Santa Maria -
         </div>
-        <div className="pt-2">
+        <div className="pt-2 flex">
 
           <LinkPreview 
       url="https://www.facebook.com/ACLCCollegeStaMaria"
@@ -115,14 +119,69 @@ export default function Home() {
         </div>
       </Container>
     </Section>
-         <Image src={Logo} alt="Hero logo" width={500} height={500}/>
+    <Image src={Logo} alt="Hero logo" width={500} height={500}/>
        </motion.div>
 
 
-    <div>
 
-        <div className="h-screen py-20 w-full content-zcenter mt-60">
-          <motion.div className="text-center mt-20 font-bold text-5xl" initial="hidden"
+    <MacbookScroll
+        title={
+          <span>
+            WELCOME TO THE CS22A BLOG!
+          </span>
+        }
+        badge={
+          <Link href="/">
+            <Badge className=" transform -rotate-12" />
+          </Link>
+        }
+        src={`/Welcome.svg`}
+        showGradient={false}
+      />
+
+
+
+
+    <MacbookScroll2
+    title={
+      <span>
+        PURPOSE AND GOALS OF THIS BLOG
+      </span>
+    }
+    badge={
+      <Link href="">
+        <Badge className=" transform -rotate-12" />
+      </Link>
+    }
+    src={`/Goals.svg`}
+    showGradient={false}
+  />
+
+
+
+
+
+<MacbookScroll3 
+    title={
+      <span>
+        About CS22A
+      </span>
+    }
+    badge={
+      <Link href="">
+        <Badge className=" transform -rotate-12" />
+      </Link>
+    }
+    src={`/About.svg`}
+    showGradient={false}
+  />
+
+
+
+
+    <div>
+        <div className="h-screen py-20 w-full content-zcenter mt-96 ">
+          <motion.div className="text-center mt-96 font-bold text-5xl pr-24" initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ duration: 1 }}
