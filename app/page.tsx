@@ -53,7 +53,7 @@ export default function Home() {
       
       return(
         <div className="max-w-full pt-28 mr-20">
-        <motion.div className="max-w-full mt-20 flex justify-between mx-40 mb-60"
+        <motion.div className="max-w-full mt-16 flex justify-between mr-16 ml-40 mb-20"
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
       </Container>
     </Section>
-    <Image src={Logo} alt="Hero logo" width={500} height={500}/>
+    <Image src={Logo} alt="Hero logo" width={400} height={400}/>
        </motion.div>
 
 
@@ -203,20 +203,20 @@ export default function Home() {
 
 const SkeletonOne = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Romel Cagomoc</p>
-      <div className="w-full flex ml-32">
+    <div className="flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Romel Cagomoc</p>
+      <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/romel.cagomoc.96"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 w-8 h-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -226,20 +226,20 @@ const SkeletonOne = () => {
 
 const SkeletonTwo = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Brian Agsaoay</p>
-      <div className="w-full flex ml-32">
+    <div className="flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Brian Agsaoay</p>
+      <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/romel.cagomoc.96"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url="https://www.instagram.com/bruh._.yan/"
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -249,20 +249,20 @@ const SkeletonTwo = () => {
 
 const SkeletonThree = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Raymond Jay Torlao</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+       <p className="font-extrabold text-5xl text-white md:pb-5 ">Raymond Jay Torlao</p>
+       <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/raymondjay.torlao.5"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+       className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+       className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -272,20 +272,20 @@ const SkeletonThree = () => {
 
 const SkeletonFour = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Rogin Duran</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Rogin Duran</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/rogin.duran.17"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -294,20 +294,20 @@ const SkeletonFour = () => {
 
 const SkeletonFive = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Christian Dave Villanueva</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Christian Dave Villanueva</p>
+     <div className="flex mt-32 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/christiandavevillanueva"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -316,20 +316,20 @@ const SkeletonFive = () => {
 
 const SkeletonSix = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Matthew Dela Cruz</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Matthew Dela Cruz</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/matthew.delacruz.125"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -338,20 +338,20 @@ const SkeletonSix = () => {
 
 const SkeletonSeven = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Mark Aaron Marquez</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Mark Aaron Marquez</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/markaarin.marquez"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -361,20 +361,20 @@ const SkeletonSeven = () => {
 
 const SkeletonEight = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">John Cedrick Godalle</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">John Cedrick Godalle</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/johncedrick.godalle"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -384,20 +384,20 @@ const SkeletonEight = () => {
 
 const SkeletonNine = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Juben Fajela</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Juben Fajela</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/Raginglabuyo"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -407,20 +407,20 @@ const SkeletonNine = () => {
 
 const SkeletonTen = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Axl Wilkinson Tudas</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Axl Wilkinson Tudas</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/03.L1NK"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -430,20 +430,20 @@ const SkeletonTen = () => {
 
 const SkeletonEleven = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Brayan Ababa</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Brayan Ababa</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/brayan.ababa"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -453,20 +453,20 @@ const SkeletonEleven = () => {
 
 const SkeletonTwelve = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Christian Lloyd Perez</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Christian Lloyd Perez</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/chris.lloyd.98478"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -476,20 +476,20 @@ const SkeletonTwelve = () => {
 
 const SkeletonThirteen = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Jay Salavedra</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Jay Salavedra</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/profile.php?id=100086273072804"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -499,20 +499,20 @@ const SkeletonThirteen = () => {
 
 const SkeletonFourteen = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Jethro Ortega</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Jethro Ortega</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/jethrtg"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -522,20 +522,20 @@ const SkeletonFourteen = () => {
 
 const SkeletonFifteen = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Kianne Dave Balderas</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Kianne Dave Balderas</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/kiannedave.balderas"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -545,20 +545,20 @@ const SkeletonFifteen = () => {
 
 const SkeletonSixteen = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Rico Duran</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Rico Duran</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/profile.php?id=100088681218225"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -568,20 +568,20 @@ const SkeletonSixteen = () => {
 
 const SkeletonSeventeen = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Andronico Nucum</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Andronico Nucum</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/profile.php?id=100075144817064"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>
@@ -591,20 +591,20 @@ const SkeletonSeventeen = () => {
 
 const SkeletonEighteen = () => {
   return (
-    <div className="w-full">
-      <p className="font-extrabold text-5xl text-white pb-5 ">Reggie Farina</p>
-      <div className="w-full flex ml-32">
+    <div className=" flex w-full">
+      <p className="font-extrabold text-5xl text-white md:pb-5 ">Reggie Farina</p>
+     <div className="flex mt-20 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/akosiaok"
-      className="bg-blue-600 font-bold flex ml-96 rounded"
+      className="bg-blue-600 font-bold rounded h-8"
       >
-      <IconBrandFacebook className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandFacebook className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
       <LinkPreview 
       url=""
-      className="bg-[#e4405f] font-bold flex ml-3 rounded"
+      className="bg-[#e4405f] font-bold rounded h-8"
       >
-      <IconBrandInstagram className=" text-slate-300 h-9 flex w-8"/> 
+      <IconBrandInstagram className=" text-slate-300 h-8 flex w-8"/> 
       </LinkPreview> {" "}
     </div>
     </div>

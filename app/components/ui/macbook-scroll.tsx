@@ -68,7 +68,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[200vh] w-full flex flex-col items-start pl-60 py-0 md:pb-40 md:pt-40 mb-40 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="md:min-h-[300vh] lg:min-h-[300vh]  w-full flex flex-col items-start pl-60 py-0 md:pb-40 md:pt-40 mb-40 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
     >
       <motion.h2
         style={{
@@ -164,7 +164,7 @@ export const Lid = ({
         }}
         className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
-        <div className="absolute inset-0 bg-[#272729] rounded-lg" />
+        <div className="absolute inset-0 bg-[#272729] rounded-lg mb-40" />
         <Image
           src={src as string}
           alt="aceternity logo"

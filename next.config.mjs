@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
               protocol: 'https',
-              hostname: 'wwww.facebook.com/messages',
+              hostname: 'cdn.sanity.io',
               port: '',
             }
           ],

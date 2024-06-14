@@ -47,9 +47,9 @@ export default function Navbar() {
         }}>
         <nav className=" w-full flex items-center justify-between max-w-full mx-auto  pb-1 pr-40 pl-40">
             <div className="flex" >
-            <Link href={"/"} className="font-extrabold text-xl flex items-center pr-10"> <Image src={Logo} alt="logo of the webpage" width={40} height={30} className="pr-1"></Image>
+            <Link href={"/"} className="font-extrabold text-xl flex items-center pr-10 sm:text-sm"> <Image src={Logo} alt="logo of the webpage" width={40} height={30} className="pr-1"></Image>
                 CS-22A </Link>
-            <Link href={"/blogs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Blogs</Link>
+            <Link href={"/blogs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Blogs</Link>
             <Link href={"/aboutme"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Info</Link>
             </div>
             <div className="flex"> 
