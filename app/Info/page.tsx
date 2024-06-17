@@ -15,11 +15,14 @@ export default function DirectionAwareHoverDemo() {
     <div className="flex justify-around mx-40 mt-20 gap-10 max-w-full">
         <div>
         <h1 className="prose text-primary text-5xl font-bold">About Me</h1> <br />
-        <h4 className="prose text-primary text-md">Hi there! My name is <strong className="font-extrabold">Andronico</strong>, and I am the creator of this blog dedicated to our amazing section, CS22A. 
-            I am a passionate student with a keen interest in Front-End Development. I also like designing websites as my hobby.</h4> <br />
+        <h4 className="prose text-primary text-md">Hi there! My name is <strong className="font-extrabold">Andronico</strong>, and 
+        I am the creator of this blog dedicated to our amazing section, CS22A. I am a passionate student with a keen interest 
+        in Front-End Development. Designing websites is also one of my hobbies.
+            I am a passionate student with a keen interest in Front-End Development.</h4> <br />
         <h1 className="prose text-primary text-4xl font-bold">Background</h1> <br />
-        <h4 className="prose text-primary text-md"> I am currently a student in the CS22A section at ACLC Sta. Maria. 
-            My journey in the field of Computer Science began at loving web desings. Over the years, I have developed a deep appreciation for Web Development specifically Front-end Developing
+        <h4 className="prose text-primary text-md"> I am currently a student in the CS22A section at ACLC Sta. Maria. My journey in the field of
+             Computer Science began with a love for web design. Over the years, I have developed a deep appreciation for Web Development, 
+             specifically Front-end Development.
         </h4> <br />
         <h1 className="prose text-primary text-4xl font-bold">Skills and Interest </h1> <br />
         <div className="flex gap-10 max-w-full">

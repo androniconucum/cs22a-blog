@@ -52,16 +52,17 @@ export default function Home() {
       return(
         <div>
         <div className="max-w-full">
-        <motion.div className="max-w-full flex justify-between mr-16 ml-40 mb-56"
+        <motion.div className="mt-16 flex justify-between mr-16 ml-40 mb-56"
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
             ease: "easeInOut",
             duration: 1,
-            delay: 0.4,
+            delay: 0.1,
+            once: true,
           }}>
        <Section>
-      <div className="mt-40 max-w-full text-6xl pb-0 mb-0 font-semibold lg:text-7xl">
+      <div className=" max-w-full text-6xl pb-0 mb-0 font-semibold lg:text-7xl">
         Welcome to the CS22A Blog
         </div>
         <div className="text-6xl font-semibold lg:text-3xl mt-3">
@@ -121,11 +122,11 @@ export default function Home() {
     <Image src={Logo} alt="Hero logo" width={400} height={400} className="pr-20"/>
        </motion.div>
 
-
-    <motion.div className="pt-40 mb-36 flex flex-col justify-center items-center" id="AboutUs" initial="hidden"
+    <div className="flex flex-col justify-center items-center">
+    <motion.div className="pt-20 mb-36  max-w-7xl" id="AboutUs" initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
       variants={{
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0 }
@@ -210,11 +211,8 @@ export default function Home() {
       <strong className="font-extrabold">Team Sports with Ma'am Winnie:</strong> Balancing our academic life with physical activity and teamwork through various sports.
       </h3>
       </div>
-      
-
       </div>
     </motion.div>
-    <div>
     </div>
 
 
