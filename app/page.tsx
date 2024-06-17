@@ -123,14 +123,7 @@ export default function Home() {
        </motion.div>
 
     <div className="flex flex-col justify-center items-center">
-    <motion.div className="pt-20 mb-36  max-w-7xl" id="AboutUs" initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      variants={{
-        visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 0 }
-      }}>
+    <div className="pt-20 mb-36  max-w-7xl" id="AboutUs" >
       <p className="px3 text-5xl text-center font-bold pb-20">
           ABOUT
       </p>
@@ -212,7 +205,7 @@ export default function Home() {
       </h3>
       </div>
       </div>
-    </motion.div>
+    </div>
     </div>
 
 
