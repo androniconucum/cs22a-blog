@@ -1,3 +1,4 @@
+"use client"
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -5,7 +6,7 @@ import { ThemeProvider } from "./components/theme-provider";
 import Navbar from "./components/navbar";
 import Home from "./page";
 import { IconHome, IconMessage, IconUser, IconBrandBlogger, } from "@tabler/icons-react";
-import { FloatingNav } from "@/app/components/ui/floating-navbar";
+import Footer from "./components/ui/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,9 @@ export default function RootLayout({
             <Navbar />
        </ThemeProvider>
         <main className="max-w-full mx-auto" >{children}</main>
+        <div className="mt-96 pb-10">
+        <Footer />
+        </div>
         </body>
     </html>
   );

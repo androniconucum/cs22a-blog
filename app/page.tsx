@@ -8,17 +8,17 @@ import {Badge, Camera, Mail} from "lucide-react";
 import { LinkPreview } from "./components/ui/link-preview";
 import { LayoutGrid } from "./components/ui/layout-grid";
 import Image from "next/image";
-import Logo from "@/public/Hero.svg"
+import Logo from "@/public/Hero copy.svg"
 import { FlipWords } from "./components/ui/flip-words";
-import {animate, motion, useInView, useMotionValueEvent, useScroll, useTransform} from "framer-motion";
+import {animate, motion, useInView, useMotionValue, useScroll, useTransform} from "framer-motion";
 import { MacbookScroll } from "./components/ui/macbook-scroll";
-import { MacbookScroll2 } from "./components/ui/macbook-scroll2";
-import { MacbookScroll3 } from "./components/ui/macbook-scroll3";
+import Contact from "./components/ui/contact";
+import Footer from "./components/ui/footer";
 
 
 
 // Variables
-
+ 
 const banner = {
   animate: {
     transition: {
@@ -52,8 +52,9 @@ export default function Home() {
       
       
       return(
-        <div className="max-w-full pt-28 mr-20">
-        <motion.div className="max-w-full mt-16 flex justify-between mr-16 ml-40 mb-20"
+        <div>
+        <div className="max-w-full">
+        <motion.div className="max-w-full flex justify-between mr-16 ml-40 mb-56"
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -62,7 +63,7 @@ export default function Home() {
             delay: 0.4,
           }}>
        <Section>
-      <div className="mt-7 max-w-full text-6xl pb-0 mb-0 font-semibold lg:text-7xl">
+      <div className="mt-40 max-w-full text-6xl pb-0 mb-0 font-semibold lg:text-7xl">
         Welcome to the CS22A Blog
         </div>
         <div className="text-6xl font-semibold lg:text-3xl mt-3">
@@ -100,7 +101,7 @@ export default function Home() {
       url="https://www.facebook.com/ACLCCollegeStaMaria"
       >
           <Button>
-            <IconBrandFacebookFilled className="mr-2 text-blue-700"/> Aclc Santa Maria
+            <IconBrandFacebook className="mr-2"/> Aclc Santa Maria
           </Button>
           </LinkPreview> {" "}
 
@@ -119,15 +120,110 @@ export default function Home() {
         </div>
       </Container>
     </Section>
-    <Image src={Logo} alt="Hero logo" width={400} height={400}/>
+    <Image src={Logo} alt="Hero logo" width={400} height={400} className="pr-20"/>
        </motion.div>
 
+
+    <motion.div className="pt-40 mb-36 flex flex-col justify-center items-center" id="AboutUs" initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      variants={{
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0 }
+      }}>
+      <p className="px3 text-5xl text-center font-bold pb-20">
+          ABOUT
+      </p>
+      <br />
+      <div className=" prose max-w-full mx-40">
+      <h1 className="text-4xl font-extrabold text-primary">
+          Welcome to the CS22A Blog!
+      </h1>
+      <h3 className="prose-h3:text-lg text-primary font-medium">
+      Hello, and welcome to the official blog of CS22A! We're a vibrant and enthusiastic section consisting of 18 dedicated students, each passionate about learning and excelling in 
+      the field of computer science. Through this blog, we aim to share our journey, experiences, and insights as we navigate through our academic life.
+      </h3>
+      <br />
+      <h1 className="text-4xl font-extrabold text-primary">
+          Our Subjects and Teachers
+      </h1>
+      <h3 className="prose-h3:text-xl text-primary font-mediu">
+      In CS22A, we are privileged to study under the guidance of some remarkable educators. Here's a glimpse of the subjects we are currently tackling and the brilliant 
+      minds leading us through them:
+      </h3>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Object-Oriented Programming with Sir Mark:</strong>Dive into the world of OOP as we learn to build robust and scalable software applications.  
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Calculus 2 with Sir Eugene:</strong>Exploring advanced mathematical concepts that are crucial for computer science and engineering.
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Application Development with Sir Roi:</strong>Bringing our ideas to life through practical and innovative application projects.
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Application Development with Sir Roi:</strong> Bringing our ideas to life through practical and innovative application projects.
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Kritikal na Pagbasa with Ma'am Rosh:</strong> Enhancing our critical reading and comprehension skills in Filipino literature.
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Algorithms and Complexity with Sir Mark:</strong> Understanding the fundamentals of algorithms and their complexities to solve computational problems efficiently.
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Data Communications and Networking with Sir Macky:</strong> Learning the intricacies of data transfer and network structures.  
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Logic Design and Digital Complexity with Sir Macky:</strong> Delving into the design and analysis of digital circuits and systems.
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-normal">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Information Management with Ma'am Aj:</strong> Mastering the art of managing and organizing information systems.
+      </h3>
+      </div>
+
+      <div className="prose-h3:font-light">
+      <h3 className="prose-h3:text-lg text-primary">
+      <strong className="font-extrabold">Team Sports with Ma'am Winnie:</strong> Balancing our academic life with physical activity and teamwork through various sports.
+      </h3>
+      </div>
+      
+
+      </div>
+    </motion.div>
+    <div>
+    </div>
 
 
     <MacbookScroll
         title={
           <span>
-            WELCOME TO THE CS22A BLOG!
+            WHAT IS CS22A?
           </span>
         }
         badge={
@@ -135,53 +231,17 @@ export default function Home() {
             <Badge className=" transform -rotate-12" />
           </Link>
         }
-        src={`/Welcome.svg`}
+        src={`/About.svg`}
         showGradient={false}
       />
 
 
 
 
-    <MacbookScroll2
-    title={
-      <span>
-        PURPOSE AND GOALS OF THIS BLOG
-      </span>
-    }
-    badge={
-      <Link href="">
-        <Badge className=" transform -rotate-12" />
-      </Link>
-    }
-    src={`/Goals.svg`}
-    showGradient={false}
-  />
 
-
-
-
-
-<MacbookScroll3 
-    title={
-      <span>
-        About CS22A
-      </span>
-    }
-    badge={
-      <Link href="">
-        <Badge className=" transform -rotate-12" />
-      </Link>
-    }
-    src={`/About.svg`}
-    showGradient={false}
-  />
-
-
-
-
-    <div>
-        <div className="h-screen py-20 w-full content-zcenter mt-96 ">
-          <motion.div className="text-center mt-96 font-bold text-5xl pr-24" initial="hidden"
+    <div className="">
+        <div className="h-screen py-10 w-full content-zcenter mt-20" id="Students">
+          <motion.div className="text-center font-bold text-4xl pr-24" initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ duration: 1 }}
@@ -193,7 +253,8 @@ export default function Home() {
           </motion.div>
         <LayoutGrid cards={cardname} />
        </div>
-  </div>  
+       </div>
+  </div> 
        </div>
   )
 }

@@ -5,7 +5,6 @@ import { client, urlFor } from "@/app/lib/sanity";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { FloatingNav } from "@/app/components/ui/floating-navbar";
 import { LayoutGrid } from "@/app/components/ui/layout-grid";
 import { url } from "inspector";
 import { LinkPreview } from "../components/ui/link-preview";

@@ -30,13 +30,14 @@ export default function Navbar() {
           },
         {
           name: "Newsletter",
-          link: "/newsletter",
+          
           icon: (
             <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
           ),
         },
       ];
     return(
+      <div className="pb-20">
         <motion.div className=" z-50 fixed bg-transparent w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 dark:bg-opacity-85 bg-white dark:bg-[#09090b] pt-1"
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}
@@ -49,17 +50,22 @@ export default function Navbar() {
             <div className="flex" >
             <Link href={"/"} className="font-extrabold text-xl flex items-center pr-10 sm:text-sm"> <Image src={Logo} alt="logo of the webpage" width={40} height={30} className="pr-1"></Image>
                 CS-22A </Link>
+            <Link href={"/"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Home</Link>
+            <Link href={"/#AboutUs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">About</Link>
+            <Link href={"/#Students"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Students</Link>
             <Link href={"/blogs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Blogs</Link>
             <Link href={"/aboutme"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Info</Link>
             </div>
             <div className="flex"> 
           <ModeToggle />
-          <button className="px-1 ml-5 text-sm my-0 py-0 rounded-md bg-white text-black font-bold transition duration-200 hover:bg-[#09090b] hover:text-white dark:bg-[#09090b] dark:text-[#E0E0E1] dark:hover:bg-white dark:hover:text-black">
-            Newsletter
+          <button className="px-1 ml-5 text-sm my-0 py-0 rounded-md bg-white text-black font-bold transition duration-200 hover:bg-[#09090b] hover:text-white dark:bg-[#09090b] dark:text-[#E0E0E1] dark:hover:bg-white dark:hover:text-black"> <Link href={"/Feedback"}>
+            Feedback
+          </Link>
           </button>
           </div>
         </nav>
         <hr className="full"/>
         </motion.div>
+        </div>
     );
 }

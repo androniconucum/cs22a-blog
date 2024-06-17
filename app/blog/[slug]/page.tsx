@@ -1,4 +1,4 @@
-import { FloatingNav } from "@/app/components/ui/floating-navbar";
+
 import { fullBlog } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity"
 import { IconBrandBlogger, IconHome, IconMessage, IconUser } from "@tabler/icons-react";
@@ -27,7 +27,7 @@ export default async function BlogArticle ({params}: {params: {slug: string}}) {
     console.log(data);
 
     return (
-        <div className="pt-36  max-w-full scroll-smooth items-center justify-items-center object-center lg:mx-50  md:mx-40 sm:mx-20">
+        <div className=" max-w-full scroll-smooth items-center justify-items-center object-center lg:mx-50  md:mx-40 sm:mx-20">
             <h1 className="object-center">
                 <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase "> CS22A -Blog</span>
                 <span className=" mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl ">{data.title}</span>
