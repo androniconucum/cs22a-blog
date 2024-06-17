@@ -16,7 +16,7 @@ export default function FooterMenu () {
             <Link href={"/#AboutUs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">About</Link>
             <Link href={"/#Students"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Students</Link>
             <Link href={"/blogs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Blogs</Link>
-            <Link href={"/aboutme"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Info</Link>
+            <Link href={"/Info"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Info</Link>
             </div>
             </div>
           </div>
