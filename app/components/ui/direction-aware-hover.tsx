@@ -70,7 +70,7 @@ export const DirectionAwareHover = ({
         className
       )}
     >
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <motion.div
           className="relative h-full w-full"
           initial="initial"
