@@ -10,7 +10,7 @@ import { LayoutGrid } from "./components/ui/layout-grid";
 import Image from "next/image";
 import Logo from "@/public/Hero copy.svg"
 import { FlipWords } from "./components/ui/flip-words";
-import {animate, motion, useInView, useMotionValue, useScroll, useTransform} from "framer-motion";
+import {motion, useInView, useMotionValue, useScroll, useTransform} from "framer-motion";
 import { MacbookScroll } from "./components/ui/macbook-scroll";
 import Contact from "./components/ui/contact";
 import Footer from "./components/ui/footer";
