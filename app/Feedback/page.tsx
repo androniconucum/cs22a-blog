@@ -8,7 +8,7 @@ export default function Feedback() {
     <div className='text-center text-3xl mt-20 font-bold'>
      Share Your Thoughts - Help Me Enhance Your Experience 
         </div>
-    <div className='flex items-center justify-center mt-32'>
+    <div className='flex items-center justify-center mt-20'>
         <Contact/>
         </div>
         </div>
