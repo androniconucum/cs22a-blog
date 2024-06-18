@@ -37,7 +37,7 @@ export default function Navbar() {
         },
       ];
     return(
-      <div className="pb-20">
+      <div className="pb-10">
         <motion.div className=" z-50 fixed bg-transparent w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 dark:bg-opacity-85 bg-white dark:bg-[#09090b] pt-1"
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,11 +50,11 @@ export default function Navbar() {
             <div className="flex" >
             <Link href={"/"} className="font-extrabold text-xl flex items-center pr-10 sm:text-sm"> <Image src={Logo} alt="logo of the webpage" width={40} height={30} className="pr-1"></Image>
                 CS-22A </Link>
-            <Link href={"/"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Home</Link>
-            <Link href={"/#AboutUs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">About</Link>
-            <Link href={"/#Students"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Students</Link>
-            <Link href={"/blogs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm">Blogs</Link>
-            <Link href={"/Info"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium">Info</Link>
+            <Link href={"/"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm scroll-smooth">Home</Link>
+            <Link href={"/#AboutUs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm scroll-smooth">About</Link>
+            <Link href={"/#Students"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm scroll-smooth">Students</Link>
+            <Link href={"/blogs"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium sm:text-sm scroll-smooth">Blogs</Link>
+            <Link href={"/Info"} className="pl-6 text-sm pt-2 text-foreground/60 hover:text-foreground/100 font-medium scroll-smooth">Info</Link>
             </div>
             <div className="flex"> 
           <ModeToggle />

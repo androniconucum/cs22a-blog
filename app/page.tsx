@@ -229,8 +229,8 @@ export default function Home() {
 
 
     <div className="">
-        <div className="h-screen py-10 w-full content-zcenter" id="Students">
-          <motion.div className="text-center font-bold text-4xl pr-24" initial="hidden"
+        <div className="h-screen w-full content-zcenter" id="Students">
+          <motion.div className="text-center font-bold text-4xl pr-24 mb-5 pt-20" initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ duration: 1 }}
@@ -324,7 +324,7 @@ const SkeletonFour = () => {
   return (
     <div className=" flex w-full">
       <p className="font-extrabold text-5xl text-white md:pb-5 ">Rogin Duran</p>
-     <div className="flex mt-20 gap-2">
+     <div className="flex mt-14 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/rogin.duran.17"
       className="bg-blue-600 font-bold rounded h-8"
