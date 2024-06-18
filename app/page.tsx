@@ -50,7 +50,7 @@ export default function Home() {
       
       
       return(
-        <div>
+        <div className="max-w-full">
         <div className="max-w-full">
         <motion.div className="mt-16 flex justify-between mr-16 ml-40 mb-56"
           initial={{ opacity: 0, y: 80 }}
@@ -229,7 +229,7 @@ export default function Home() {
 
 
     <div className="">
-        <div className="h-screen py-10 w-full content-zcenter mt-20" id="Students">
+        <div className="h-screen py-10 w-full content-zcenter" id="Students">
           <motion.div className="text-center font-bold text-4xl pr-24" initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -412,8 +412,8 @@ const SkeletonSeven = () => {
 const SkeletonEight = () => {
   return (
     <div className=" flex w-full">
-      <p className="font-extrabold text-5xl text-white md:pb-5 ">John Cedrick Godalle</p>
-     <div className="flex mt-20 gap-2">
+      <p className="font-extrabold text-5xl text-white md:pb-5 pt-20 ">John Cedrick Godalle</p>
+     <div className="flex pt-52  gap-2">
       <LinkPreview 
       url="https://www.facebook.com/johncedrick.godalle"
       className="bg-blue-600 font-bold rounded h-8"
@@ -458,8 +458,8 @@ const SkeletonNine = () => {
 const SkeletonTen = () => {
   return (
     <div className=" flex w-full">
-      <p className="font-extrabold text-5xl text-white md:pb-5 ">Axl Wilkinson Tudas</p>
-     <div className="flex mt-20 gap-2">
+      <p className="font-extrabold text-5xl pt-20 text-white md:pb-5 ">Axl Wilkinson Tudas</p>
+     <div className="flex pt-56 gap-2">
       <LinkPreview 
       url="https://www.facebook.com/03.L1NK"
       className="bg-blue-600 font-bold rounded h-8"
